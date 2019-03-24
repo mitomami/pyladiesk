@@ -1,0 +1,60 @@
+﻿ーーーーー事前準備ーーーーーー
+
+
+1.Mongoのインストール
+
+mongodb のwindowsとmac、ubuntuでインストールする方法が書かれています。
+
+http://may46onez.hatenablog.com/entry/2018/09/08/134428
+
+
+
+2.pymongoをインストール
+MongoDBをpythonで動かすためにpymongoを入れてください。
+pip install pymongo
+
+
+2.scrapyのインストール
+
+（ubuntuの場合）
+
+sudo apt install -y libssl\dev libffi-dev
+
+pip install scrapy
+　　pip で上手くインストールできない場合は pip install U pip　で最新にする必要あり
+　　anaconda　の人は conda install scrapyかな
+
+（windowsの場合）
+windowsでcondaの場合は
+conda install -c conda-forge scrapy
+でやらないとエラーがでるらしい　詳しくは
+https://code-life.hatenablog.com/entry/2018/05/14/Python%E3%81%A7%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0%E3%81%97%E3%82%88%E3%81%86%E3%81%A8%E6%80%9D%E3%81%A3%E3%81%A6Scrapy%E5%85%A5%E3%82%8C%E3%82%88%E3%81%86%E3%81%A8
+
+win32apiのインストールも必要
+https://github.com/mhammond/pywin32/releases
+よりwindowsのバージョンと使っているpythonのバージョンに合わせてダウンロードする。
+python3.7でwindowsが64bit　⇒　pywin32-224.win-amd64-py3.7.exe
+python3.7でwindowsが32bit　⇒　pywin32-224.win32-py3.7.exe
+
+　そのまま使う場合
+　　クリックするとインストールが始まる
+　仮想環境の場合
+　　仮想環境に入った状態で保存したディレクトリで
+　　easy_install　pywhinのファイル名
+　
+でインストールされる。
+
+
+詳しくは
+https://blog.mudatobunka.org/entry/2016/08/28/144711
+
+
+（macの場合）
+pip install scrapy
+
+
+
+　(共通)
+scrapy version でscrapyのバージョンが確認できればインストールOK
+
+
